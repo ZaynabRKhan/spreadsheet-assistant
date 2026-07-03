@@ -2,13 +2,9 @@ from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe
 from langchain_google_genai import ChatGoogleGenerativeAI
 import pandas as pd
 import os
-'''
-LANGSMITH__TRACING = True
-LANGSMITH_API_KEY = "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"
-LANGSMITH_PROJECT = "RAG Pipeline Try"
-'''
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCgs57MmqEEOJW5_JZ7u0qEUGdul2RQAbQ"
-df = pd.read_excel("E:/Startup/RAG Pipeline/Online Retail.xlsx")
+
+os.environ["GOOGLE_API_KEY"] = ""
+df = pd.read_excel("")
 memory = ""
 agent = create_pandas_dataframe_agent(ChatGoogleGenerativeAI(model="gemini-2.5-flash",temperature=0,max_tokens=None,timeout=None), 
                                       df, verbose=True, allow_dangerous_code=True)

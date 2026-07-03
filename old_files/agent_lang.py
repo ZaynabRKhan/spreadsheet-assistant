@@ -5,7 +5,7 @@ from langchain.schema import HumanMessage
 # from google import genai
 import pickle
 import os
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCgs57MmqEEOJW5_JZ7u0qEUGdul2RQAbQ"
+os.environ["GOOGLE_API_KEY"] = ""
 class LLMLangAgent:
     def __init__(self, table):
         self.memory = ""

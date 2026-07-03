@@ -9,9 +9,9 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers.string import StrOutputParser
 import os
 
-# token = "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"
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCgs57MmqEEOJW5_JZ7u0qEUGdul2RQAbQ"
-df = pd.read_excel("E:/Startup/RAG Pipeline/Online Retail 1k.xlsx")
+# token = ""
+os.environ["GOOGLE_API_KEY"] = ""
+df = pd.read_excel("")
 conversation_context = ""
 def runSqlQuery(query):
     query = query.replace('```','')

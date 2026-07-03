@@ -4,7 +4,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers.string import StrOutputParser
 import os
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCgs57MmqEEOJW5_JZ7u0qEUGdul2RQAbQ"
+os.environ["GOOGLE_API_KEY"] = ""
 
 class LLMSQLAgent:
     def __init__(self, table):
